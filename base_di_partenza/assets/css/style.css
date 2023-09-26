@@ -118,12 +118,18 @@ main {
 	padding: 2em 1em;
 	margin-bottom: 1.5em;
 }
+@media screen and (min-width: 600px) {
+	article h1 span {
+		white-space: nowrap;
+	}
+}
 @media screen and (min-width: 700px) {
 	main {
 		padding: 2em;
 	}
 	article h1 span {
 		position: relative;
+		white-space: nowrap;
 	}
 	article h1 span img {
 		position: absolute;
@@ -216,6 +222,10 @@ h1 + p {
 		border-radius: 10px;
 		padding: 10px 15px;
 		border: 2px solid white;
+	}
+	footer button a:visited {
+		direction: none;
+		text-decoration: none;
 	}
 	footer button:nth-of-type(1) {
 		top: 3px;
@@ -550,7 +560,13 @@ footer {
 	text-align: center;
 	font-size: 1.2rem;
 }
-
+@media screen and (min-width: 700px) {
+	footer button:nth-of-type(3) {
+		position: fixed;
+		bottom: 20px;
+		right: 0;
+	}
+}
 @media screen and (min-width: 800px) {
 	footer {
 		padding: 1em 12em;
